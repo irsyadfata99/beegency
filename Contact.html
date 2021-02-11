@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Company Profile</title>
+        <link rel="stylesheet" href="Styles.css">
+        <link rel="stylesheet" 
+        href="https://use.fontawesome.com/releases/v5.15.1/css/all.css" 
+        integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp" 
+        crossorigin="anonymous">
+    </head>
+<body>
+    <nav class="navbar">
+        <div class="navbar__container">
+            <a href="/" id="navbar__logo">BEEGENCY</a>
+            <div class="navbar__toggle" id="mobile-menu">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+            <!-- <ul class="navbar__menu">
+                <li class="navbar__item">
+                    <a href="#home" class="navbar__links" id="home-page">Home</a>
+                </li>
+                <li class="navbar__item">
+                    <a href="#about" class="navbar__links" id="about-page">About Us</a>
+                </li>
+                <li class="navbar__item">
+                    <a href="#services" class="navbar__links" id="services-page">Services</a>
+                </li>
+                <!-- <li class="navbar__item">
+                    <a href="#contact" class="navbar__links" id="contact">Contact Us</a>
+                </li> -->
+                <!-- <li class="navbar__btn">
+                    <a href="#sign-up" class="button" id="signup">Sign up</a>
+                </li> -->
+            </ul> -->
+        </div>
+    </nav>
+
+<div id="googleMap" style="width:100%;height:400px;"></div>
+
+<script>
+function myMap() {
+var mapProp= {
+  center:new google.maps.LatLng(-6.903879,107.657223),
+  zoom:5,
+};
+var map = new google.maps.Map(document.getElementById("googleMap"),mapProp);
+}
+</script>
+    <div class="main" id="about">
+        <div class="main__container">
+           <div class="main__img--container">
+               <div class="main__img--card"><i class="fas fa-layer-group"></i></div>
+           </div> 
+           <div class="main__content">
+               <h1>IT division</h1>
+               <h2>we do all it things in company</h2>
+               <p>schedule a call to get our services</p>
+               <button class="main__btn"><a href="#">Make a Schedule</a></button>
+           </div>
+        </div>
+    </div>
+    <div class="footer__container">
+        <div class="footer__links">
+            <div class="footer__link--wrapper">
+                <div class="footer__link--items">
+                    <a href="/" id="footer__logo">BEEGENCY</a>
+                    <p>lorem ipsum</p>
+                </div>
+            </div>
+            <div class="footer__link--wrapper">
+                <div class="footer__link--items">
+                    <h2>Company</h2>
+                    <a href="/CompanyProfile.html">Company Profile</a>
+                    <a href="/sign-up">Our Recent Project</a>
+                    <a href="/sign-up">Careers</a>
+                    <a href="/Contact.html">Contact</a>
+                </div>
+            </div>
+            <div class="footer__link--wrapper">
+                <div class="footer__link--items">
+                    <h2>Our Family</h2>
+                    <a href="https://yamughnibandung.org" target="_blank">Yamughni Corporate</a>
+                    <a href="/sign-up">Custom Logo</a>
+                    <a href="/sign-up">Custom Vector</a>
+                    <a href="/sign-up">Web Base Application</a>
+                </div>
+            </div>
+            <div class="footer__link--wrapper">
+                <div class="footer__link--items">
+                    <h2>Contact Info</h2>
+                    <p>Jl. Antapani lama no.52, Cicaheum, Bandung. 40282</p>
+                    <p>beegency123@gmail.com</p>
+                    <p>081318465501</p>
+                </div>
+            </div>
+        </div> 
+        <section class="social__media">
+            <div class="social__media--wrap">
+                <!-- <div class="footer__logo">
+                    <a href="/" id="footer__logo">BEEGENCY</a>
+                </div> -->
+                <p class="website__rights">© BEEGENCY 2021. All rights reserved</p>
+                <div class="social__icons">
+                    <a href="/" class="social__icon--link" target="_blank"><i class="fab fa-facebook"></i></a>
+                    <a href="/" class="social__icon--link"><i class="fab fa-instagram"></i></a>
+                    <a href="/" class="social__icon--link"><i class="fab fa-youtube"></i></a>
+                    <a href="/" class="social__icon--link"><i class="fab fa-linkedin"></i></a>
+                </div>
+            </div>
+    </div>
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyATnXvyMyzqaR0sXHTS0hiR-9vvEhUwYag" async="" defer="defer" type="text/javascript"></script>
+</body>
+</html>
